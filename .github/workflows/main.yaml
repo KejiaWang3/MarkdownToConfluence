@@ -1,12 +1,3 @@
-name: Upload Documentation
-
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - "documentation/**"
-
 jobs:
   markdown_to_confluence_job:
     runs-on: ubuntu-latest
@@ -15,13 +6,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Conversion step
-        uses: ./ # Uses an action in the root directory
-        id: Convert
+        uses: TTengs/MarkdownToConfluence@v3
         with:
-          fileslocation: 'documentation'
-          should_upload: false
-          confluence_url: 'https://at-bachelor.atlassian.net'
-          confluence_space_key: 'BPP'
-          auth_username: ${{ secrets.AUTH_USERNAME }}
-          auth_api_token: ${{ secrets.AUTH_API_TOKEN }}
-          is_preview: true
+          fileslocation: './documentation'
+          should_upload: true
+          confluence_url: 'https://network.atlassian.net/wiki'
+          confluence_space_key: '~63b85c94082abdd71bb77ba3
+          auth_username: ${{ kejia.wang@gov.bc.ca }}
+          auth_api_token: ${{ ATATT3xFfGF0Y9mGsKc2-RJUfwQPwZ7afjMBYJzNHFBU0UJWR25-PpxW3TzSbNO4z6XrbtdVjX3AcZrUwEG0iHOrFp9kDGBCVA9zl5PCnWmztr5F6w_riINyvwoXHUrMANHjf3d4s3QFcShwmNlZQl6iCQTUtfHRTCyRb8zE7-mdCi7hyCZbMgY=CFEE3F51 }}
+          is_preview: false
