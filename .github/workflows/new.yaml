@@ -11,7 +11,7 @@ jobs:
           fileslocation: './documentation'
           should_upload: true
           confluence_url: 'https://network.atlassian.net/wiki'
-          confluence_space_key: '~63b85c94082abdd71bb77ba3
+          confluence_space_key: '63b85c94082abdd71bb77ba3
           auth_username: ${{ kejia.wang@gov.bc.ca }}
           auth_api_token: ${{ ATATT3xFfGF0Y9mGsKc2-RJUfwQPwZ7afjMBYJzNHFBU0UJWR25-PpxW3TzSbNO4z6XrbtdVjX3AcZrUwEG0iHOrFp9kDGBCVA9zl5PCnWmztr5F6w_riINyvwoXHUrMANHjf3d4s3QFcShwmNlZQl6iCQTUtfHRTCyRb8zE7-mdCi7hyCZbMgY=CFEE3F51 }}
           is_preview: false
