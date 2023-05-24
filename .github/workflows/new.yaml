@@ -12,7 +12,7 @@ jobs:
           fileslocation: './documentation'
           should_upload: true
           confluence_url: 'https://dpdd.atlassian.net'
-          confluence_space_key: '63b85c94082abdd71bb77ba3'
+          confluence_space_key: '~63b85c94082abdd71bb77ba3'
           auth_username: ${{ secrets.AUTH_USERNAME }}
           auth_api_token: ${{ secrets.AUTH_API_TOKEN }}
           is_preview: false
