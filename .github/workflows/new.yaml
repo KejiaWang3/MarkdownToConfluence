@@ -13,6 +13,6 @@ jobs:
           should_upload: true
           confluence_url: 'https://dpdd.atlassian.net'
           confluence_space_key: '~63b85c94082abdd71bb77ba3'
-          auth_username: ${{ kejia.wang@gov.bc.ca }}
-          auth_api_token: ${{ ATATT3xFfGF0Y9mGsKc2-RJUfwQPwZ7afjMBYJzNHFBU0UJWR25-PpxW3TzSbNO4z6XrbtdVjX3AcZrUwEG0iHOrFp9kDGBCVA9zl5PCnWmztr5F6w_riINyvwoXHUrMANHjf3d4s3QFcShwmNlZQl6iCQTUtfHRTCyRb8zE7-mdCi7hyCZbMgY=CFEE3F51 }}
+          auth_username: ${{ secrets.AUTH_USERNAME }}
+          auth_api_token: ${{ secrets.AUTH_API_TOKEN }}
           is_preview: false
