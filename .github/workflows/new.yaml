@@ -1,4 +1,4 @@
-on: [update]
+on: [push]
 jobs:
   markdown_to_confluence_job:
     runs-on: ubuntu-latest
