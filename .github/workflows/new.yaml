@@ -15,4 +15,4 @@ jobs:
           confluence_space_key: '~63b85c94082abdd71bb77ba3'
           auth_username: ${{ secrets.AUTH_USERNAME }}
           auth_api_token: ${{ secrets.AUTH_API_TOKEN }}
-          is_preview: false
+          is_preview: true
