@@ -9,7 +9,7 @@ jobs:
       - name: Conversion step
         uses: TTengs/MarkdownToConfluence@v3
         with:
-          fileslocation: './documentation'
+          fileslocation: './documentation/page 1/Underpage/index.md'
           should_upload: true
           confluence_url: 'https://dpdd.atlassian.net/wiki/'
           confluence_space_key: '~63b85c94082abdd71bb77ba3'
